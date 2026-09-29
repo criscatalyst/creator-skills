@@ -17,7 +17,7 @@ Built and used daily by [@criscatalyst](https://instagram.com/criscatalyst).
 | [video-breakdown](skills/video-breakdown/) | Any video split into timestamped frames, contact sheets and a local transcript. Study a reel shot by shot. | yt-dlp, ffmpeg, Whisper |
 | [transcribe](skills/transcribe/) | Transcript of any video URL (IG, TikTok, YouTube, X...) with local Whisper. | yt-dlp, ffmpeg, Whisper |
 | **Writing** | | |
-| [script-writer](skills/script-writer/) | Video idea to short-form script: Hook, Build-Up, Value, Payoff, CTA. 100+ real viral hooks. | nothing |
+| [script-writer](skills/script-writer/) | Idea or competitor reel to a short-form script: 10 scored hooks, a beat map that re-hooks every 6-8s, proof on screen, a quality gate. Writes in your voice. | nothing |
 | [daily-threads](skills/daily-threads/) | Brain-dump to a full day of ready-to-post Threads/X posts. | nothing |
 | [hemingway](skills/hemingway/) | Sentence-by-sentence readability check calibrated to your voice rules, with a clean rewrite. | nothing |
 | **Visuals** | | |

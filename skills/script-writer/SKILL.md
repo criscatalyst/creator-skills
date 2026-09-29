@@ -1,82 +1,75 @@
 ---
 name: script-writer
-description: "Short-form video script writer. Transforms video ideas, rambles, or rough concepts into full retention-optimized scripts for Instagram Reels, TikTok, YouTube Shorts, and any vertical short-form video using a proven viral structure (Hook → Build-Up → Value → Payoff → CTA). Includes a library of 100+ proven viral hooks with view data and a complete psychology tricks toolkit. Use when the user wants to: write a reel script, turn an idea into a script, draft a reel, structure a reel, write a hook, script a short, flesh out a video concept into a full script, improve/rewrite an existing script, brainstorm hooks, or get help with short-form content."
+description: "Short-form video script writer for Reels, TikTok and Shorts. Turns an idea, a ramble or a reference reel into a script built for retention: 10 hooks across different mechanics scored and cut to the best 3, a beat map that re-hooks every 6-8 seconds and saves the payoff for the end, what's on screen for every line, and a quality gate that rewrites anything generic before delivery. Reads the creator's own voice and script rules and their freshest niche hooks first. Use when the user wants to write or rewrite a reel script, turn an idea into a script, write hooks, adapt a competitor reel to their page, or fix a script that feels flat."
 ---
 
-# Short-Form Video Script Writer
+# Short-form script writer
 
-Transform raw ideas, rambles, and rough concepts into viral short-form scripts (Reels / TikToks / Shorts) optimized for retention, engagement, and conversions.
+The job is a script the creator would post with confidence: a hook that stops the scroll in the first second, a reason to stay at every beat, and value the viewer can see, not just hear.
 
-## Workflow
+Three failure modes this skill exists to prevent:
+- **Sameness.** Every script on the same five blocks with the same stock phrases. Here the format decides the structure (`references/formats.md`), and no two scripts in a batch share a hook mechanic.
+- **Weak hooks.** Templates recycled from other niches. Here hooks come from mechanics plus the creator's freshest niche examples (`references/hook-engine.md`), never from a static list of old viral lines.
+- **Attention that dies after second 3.** Here every script gets a beat map with open loops, re-hooks and a withheld payoff (`references/formats.md`), and a gate that checks it (`references/quality-gate.md`).
 
-Writing a script involves these steps:
+## Step 0: Load the creator (always, before writing a word)
 
-1. Clarify the idea (understand the user's concept, target audience, and goal)
-2. Read the scripting methodology (`references/scripting-methodology.md`)
-3. Select a hook format (consult `references/viral-hooks.md` for proven formats)
-4. Draft the full script using the template (`references/script-template.md`)
-5. Annotate each section with the psychology tricks being used
-6. Write a caption with hook, value summary, and CTA
+1. **Voice and rules.** Read `~/CLAUDE.md` and follow what it points to for brand, voice, audience (ICP) and script rules. The creator's own rules **override** this skill wherever they conflict (tone, CTA style, how much to give away).
+2. **Fresh hooks from the niche.** If the creator keeps a hook bank, recent outlier research or competitor transcripts (look for the files `~/CLAUDE.md` points to), read the newest. Real hooks that worked in the last weeks beat any library.
+3. **The reference, if there is one.** If the user gives a reel to adapt, get its transcript first (a transcribe or video-breakdown skill if installed) and write down its mechanics before touching the topic.
 
-## Step 1: Clarify the Idea
+If there's no `~/CLAUDE.md`, ask once for the audience and the goal, then proceed with smart defaults.
 
-When the user provides an idea (which may be a rough ramble, a topic, or a polished concept), extract:
+## Step 1: Pin the brief (don't interrogate)
 
-- **Core topic/message** — What is this script actually about?
-- **Target audience** — Who is this for? If the user hasn't said, ask once. Don't guess a niche.
-- **Goal** — Views (mass appeal hook) or conversions (specific/tactical hook)?
-- **Duration** — 15s, 30s, 60s, or 90s? (Default: 60s)
-- **Content type** — Quick tips, tutorial, story-based, or "moments"?
+Extract, and state in 3-4 lines before the script:
+- **Topic and the one real specific**: the tool, number, result or story that only this creator has. No specific → ask for one, because it's what separates the script from everyone else's.
+- **Viewer and their pain**, in their words.
+- **Format** (`references/formats.md`): tool drop, list, test/experiment, contrarian, demo/transformation, story.
+- **Length**: default 30-45s. Budget ~2.5 spoken words per second (40s ≈ 100 words).
+- **CTA mechanic**: comment keyword, save, follow, link. Use the creator's standard if they have one.
 
-If the user just rambles an idea, distill it into a clear concept. Do NOT ask excessive clarifying questions — make smart defaults and write the script. The user can iterate.
+## Step 2: Hooks (`references/hook-engine.md`)
 
-## Step 2: Read the Methodology
+Write **10 hooks across at least 6 different mechanics**. Each hook has three layers: spoken line, on-screen text, first frame. Score them, drop the weak, present the **best 3** with their scores and a one-line why. Write the script on the best one unless the user picks.
 
-Before writing, read `references/scripting-methodology.md` to load the full viral scripting framework including:
-- The 5-part structure (Hook → Build-Up → Value → Payoff → CTA)
-- The 6 principles of persuasion
-- The psychology tricks toolkit
-- Key principles (subtlety, authority through showing, every line must serve a purpose)
+## Step 3: Beat map, then the script (`references/formats.md`)
 
-## Step 3: Select a Hook
+Pick the format's beat map. Plan the beats first: the open loop, the re-hooks every 6-8s, the pattern interrupt, where the proof appears on screen, where the payoff lands. Then write the lines to fill the beats. The value is a **transformation the viewer can see** (before/after, input/output, number that moves), not a list of tips read aloud.
 
-Read `references/viral-hooks.md` to find a proven hook format that fits the user's topic. The hook library contains:
-- 100+ real hooks with view counts (sorted by virality)
-- Hook format categories (Dream Outcome, Burning Question, Challenge, Controversy, etc.)
-- Fill-in-the-blank hook templates
+## Step 4: Quality gate (`references/quality-gate.md`)
 
-**Hook selection rules:**
-- If goal is VIEWS → pick a mass appeal hook format
-- If goal is CONVERSIONS → can be more specific/tactical
-- Always adapt proven formats to the user's topic rather than inventing from scratch
-- Present 2-3 hook options to the user when possible
+Run every check. Any fail → rewrite that part and run the gate again. Don't deliver a script that fails, and don't show the gate unless something needed a trade-off.
 
-## Step 4: Write the Script
+## Output
 
-Read `references/script-template.md` for the exact output format and duration guidelines. Then write the full script following the 5-part structure.
+```
+BRIEF: topic · specific · viewer/pain · format · length · CTA
 
-**Writing rules:**
-- Every line serves a purpose (annotated with its psychology trick); cut lines that aren't doing psychological work
-- Be subtle with psychology tricks — they should be invisible to the viewer
-- Show authority through setting/proof, not by bragging
-- Hold the payoff as long as possible — everything between hook and payoff drives watch time
-- Value must be SPECIFIC and ACTIONABLE — "Would the viewer pay $5 for this?"
-- Give away your best stuff — paid-level value for free
-- CTA should leverage reciprocity — prefer "keep giving" CTAs over "please follow" CTAs
+HOOKS (best 3)
+1. [spoken] / [on-screen text] / [first frame]  · score · why
+2. ...
+3. ...
 
-## Step 5: Deliver the Script
+SCRIPT (spoken, clean, ready to read)
+...
 
-Output the script in the annotated template format (from `references/script-template.md`), including:
-- Target length and hook type
-- Psychology tricks used
-- Each section with inline annotations explaining WHY each line exists
-- A ready-to-use caption with hashtags
+BEAT MAP
+| time | line (short) | on screen | attention job |
+|------|--------------|-----------|---------------|
+| 0-2s | ...          | ...       | stop the scroll / open loop |
+| ...  | ...          | ...       | re-hook / proof / interrupt / payoff / CTA |
 
-## Iteration
+CAPTION: first line = hook restated, 2-4 lines of value, CTA. Follow the creator's caption rules.
 
-After delivering, the user may want to:
-- Try different hook angles → re-consult the hook library
-- Adjust the tone (more casual, more authority, more controversy)
-- Change the duration
-- Swap the CTA strategy
-- Add more extreme value moments
+TO PREPARE: anything the script promises that must exist before filming (the DM resource, the screen recording, the number to verify).
+```
+
+Write the script in the language the creator posts in; talk to the user in their language.
+
+## Iterating
+
+- "Hook is weak" → back to Step 2 with mechanics not used yet, don't reword the same hook.
+- "Too long" → cut a beat, not words inside every beat.
+- "Sounds like AI" → re-run the quality gate's voice checks against the creator's own lines.
+- Batch of scripts → no two share a hook mechanic or a format.

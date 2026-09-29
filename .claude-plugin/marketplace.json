@@ -1,0 +1,112 @@
+{
+  "name": "creator-skills",
+  "owner": {
+    "name": "Cris Capasso",
+    "url": "https://instagram.com/criscatalyst"
+  },
+  "metadata": {
+    "description": "Claude Code skills for content creators: research, scripting, writing, offer, visuals."
+  },
+  "plugins": [
+    {
+      "name": "hemingway",
+      "description": "Sentence-by-sentence readability filter calibrated to your voice rules. OK / ~ / X grading + clean rewrite.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/hemingway"
+      ],
+      "category": "writing"
+    },
+    {
+      "name": "script-writer",
+      "description": "Turn any video idea into a short-form script (Reels/TikTok/Shorts): Hook, Build-Up, Value, Payoff, CTA. 100+ real viral hooks.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/script-writer"
+      ],
+      "category": "writing"
+    },
+    {
+      "name": "daily-threads",
+      "description": "Turn a brain-dump into a full day of ready-to-post Threads/X posts. Proven templates, hook bank, anti-AI-detection filter.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/daily-threads"
+      ],
+      "category": "writing"
+    },
+    {
+      "name": "anti-slop-interview",
+      "description": "30-min interview that loads your voice, anti-AI rules and offer into ~/CLAUDE.md, so Claude sounds like you.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/anti-slop-interview"
+      ],
+      "category": "setup"
+    },
+    {
+      "name": "offer-builder",
+      "description": "60-min interview to decide what to sell (course, product, tool, service): 3 tailored ideas + your one-liner.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/offer-builder"
+      ],
+      "category": "strategy"
+    },
+    {
+      "name": "outliers",
+      "description": "YouTube outlier detection on any topic (views vs channel median) + title variants adapted to your niche.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/outliers"
+      ],
+      "category": "research"
+    },
+    {
+      "name": "ig-competitor-research",
+      "description": "Weekly Instagram competitor research via Chrome: ranks reels by views, pulls first-3s hooks + transcripts, HTML report.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ig-competitor-research"
+      ],
+      "category": "research"
+    },
+    {
+      "name": "video-breakdown",
+      "description": "Break any video into visuals + audio: timestamped frames, contact sheets, local Whisper transcript. Free, no API.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/video-breakdown"
+      ],
+      "category": "research"
+    },
+    {
+      "name": "transcribe",
+      "description": "Transcribe any video URL (IG, TikTok, YouTube, X...) with local Whisper. Free, no API key.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/transcribe"
+      ],
+      "category": "research"
+    },
+    {
+      "name": "mindcraft",
+      "description": "Local AI image generation on Apple Silicon via MindCraft Studio + Z-Image Turbo. $0 per image, IG-ready 1080x1350.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/mindcraft"
+      ],
+      "category": "visuals"
+    }
+  ]
+}

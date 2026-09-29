@@ -1,0 +1,22 @@
+# Run output (lives in the user's research/ dir, never in the skill repo)
+research/
+enrich/
+_pool_urls.json
+_pool_dedup.json
+_chunk_*.json
+_meta_*.json
+_enrich_urls.json
+_enrich_results.jsonl
+_retry_urls.txt
+Competitor-Research_*.md
+Competitor-Research_*.html
+competitor-list.md
+
+# Media / transient
+*.mp4
+*.mp3
+*.jpg
+
+# macOS / editor
+.DS_Store
+.claude/

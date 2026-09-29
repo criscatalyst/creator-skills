@@ -1,0 +1,7 @@
+video-breakdown-*/
+*.mp4
+*.mp3
+.ffmpeg.log
+.whisper.log
+.DS_Store
+.claude/

@@ -13,6 +13,8 @@ Built and used daily by [@criscatalyst](https://instagram.com/criscatalyst).
 | [offer-builder](skills/offer-builder/) | 60-min interview to decide what to sell (course, product, tool, service). 3 tailored ideas + your one-liner. | nothing |
 | **Research** | | |
 | [outliers](skills/outliers/) | YouTube outlier detection on any topic (views vs channel median) + title variants for your niche. | free YouTube API key |
+| [competitor-report](skills/competitor-report/) | Send a profile link: who they are, their outlier reels (sponsored flagged), audience, offer and funnel, ideas for you. Official API + transcripts. | free Meta API token; secondary IG account + yt-dlp/whisper for transcripts |
+| [content-ideas](skills/content-ideas/) | Scans your whole competitor list, keeps recent organic outliers that fit your audience, and adapts each into your version with 3 hooks. | same as competitor-report + a competitor list |
 | [ig-competitor-research](skills/ig-competitor-research/) | Weekly IG competitor research via Chrome: reels ranked by views, first-3s hooks, transcripts, HTML report. | Claude in Chrome, dummy IG account |
 | [video-breakdown](skills/video-breakdown/) | Any video split into timestamped frames, contact sheets and a local transcript. Study a reel shot by shot. | yt-dlp, ffmpeg, Whisper |
 | [transcribe](skills/transcribe/) | Transcript of any video URL (IG, TikTok, YouTube, X...) with local Whisper. | yt-dlp, ffmpeg, Whisper |
@@ -55,11 +57,15 @@ for s in ~/creator-skills/skills/*/; do ln -s "$s" ~/.claude/skills/; done
 
 `git -C ~/creator-skills pull` updates everything.
 
+## Instagram research setup (competitor-report, content-ideas)
+
+These two read Instagram through Meta's official, free Business Discovery API, so there's no scraping and no IP blocks. They need a one-time setup: a token from a Meta app (~20 minutes), and, for reel transcripts, a secondary Instagram account logged into a dedicated Chrome. Every step is in [competitor-report's README](skills/competitor-report/README.md#setup). Config and reports live in `~/.creator-skills/`.
+
 ## Suggested order
 
 1. `anti-slop-interview`: Claude learns how you talk.
 2. `offer-builder`: you know what you are selling.
-3. `outliers` / `ig-competitor-research`: find what already works in your niche.
+3. `content-ideas` (or `outliers` for YouTube, `competitor-report` for one account): find what already works in your niche.
 4. `video-breakdown`: take apart the winners.
 5. `script-writer`, then `hemingway` on the output.
 

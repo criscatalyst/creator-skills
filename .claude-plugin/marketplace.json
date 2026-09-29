@@ -107,6 +107,26 @@
         "./skills/mindcraft"
       ],
       "category": "visuals"
+    },
+    {
+      "name": "competitor-report",
+      "description": "Report on an Instagram competitor from a profile link: outlier reels vs their median (sponsored flagged), audience, offer, ideas for you. Official API + transcripts.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/competitor-report"
+      ],
+      "category": "research"
+    },
+    {
+      "name": "content-ideas",
+      "description": "Scan your competitor list for recent organic outlier reels that fit your audience, and adapt each one into your version with 3 hooks. Needs competitor-report.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/content-ideas"
+      ],
+      "category": "research"
     }
   ]
 }

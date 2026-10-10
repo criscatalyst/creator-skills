@@ -15,6 +15,7 @@ Built and used daily by [@criscatalyst](https://instagram.com/criscatalyst).
 | [outliers](skills/outliers/) | YouTube outlier detection on any topic (views vs channel median) + title variants for your niche. | free YouTube API key |
 | [competitor-report](skills/competitor-report/) | Send a profile link: who they are, their outlier reels (sponsored flagged), audience, offer and funnel, ideas for you. Official API + transcripts. | free Meta API token; secondary IG account + yt-dlp/whisper for transcripts |
 | [content-ideas](skills/content-ideas/) | Scans your whole competitor list, keeps recent organic outliers that fit your audience, and adapts each into your version with 3 hooks. | same as competitor-report + a competitor list |
+| [content-team](skills/content-team/) | Send your profile link: it learns your voice, finds similar accounts, reads their reels in Chrome and writes 3-5 scripts from the recent outliers. No list, no token. | Claude in Chrome, IG login (secondary account advised), yt-dlp/ffmpeg/whisper |
 | [ig-competitor-research](skills/ig-competitor-research/) | Weekly IG competitor research via Chrome: reels ranked by views, first-3s hooks, transcripts, HTML report. | Claude in Chrome, dummy IG account |
 | [video-breakdown](skills/video-breakdown/) | Any video split into timestamped frames, contact sheets and a local transcript. Study a reel shot by shot. | yt-dlp, ffmpeg, Whisper |
 | [transcribe](skills/transcribe/) | Transcript of any video URL (IG, TikTok, YouTube, X...) with local Whisper. | yt-dlp, ffmpeg, Whisper |

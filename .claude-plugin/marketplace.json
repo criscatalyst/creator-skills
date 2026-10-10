@@ -127,6 +127,16 @@
         "./skills/content-ideas"
       ],
       "category": "research"
+    },
+    {
+      "name": "content-team",
+      "description": "Send your Instagram profile link: similar accounts, their recent outlier reels read in Chrome, transcripts, and 3-5 scripts in your voice.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/content-team"
+      ],
+      "category": "research"
     }
   ]
 }
